@@ -4,7 +4,7 @@
  *
  * @author Christian Torrecillas
  * @version 2.4
- * @since 21/3/1993
+ * @since 07/02/2023
  */
 public class EntradaBlogCTM {
 
@@ -24,10 +24,10 @@ public class EntradaBlogCTM {
          * de la entrada y el texto que contiene la entrada. Si el número de entrada
          * es negativo, lanza una excepción.
          *
-         * @param id
-         * @param autor
-         * @param texto
-         * @throws IllegalArgumentException
+         * @param id numero entero de identificación
+         * @param autor nombre del autor
+         * @param texto todo el texto que adjuntas.
+         * @throws IllegalArgumentException Excepción para evitar valores invalidos en el constructor.
          */
         public EntradaBlogCTM(int id,String autor,String texto)throws IllegalArgumentException{
                 if(id<=0) throw new IllegalArgumentException("El id no puede ser negativo");
